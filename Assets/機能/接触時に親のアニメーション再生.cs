@@ -1,8 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(BoxCollider))]
 public class 接触時に親のアニメーション再生 : MonoBehaviour 
 {
+	void Awake()
+	{
+		collider.isTrigger = true;
+	}
+
 	/// <summary>
 	/// Triggerと接触した際呼ばれるコールバック
 	/// </summary>
