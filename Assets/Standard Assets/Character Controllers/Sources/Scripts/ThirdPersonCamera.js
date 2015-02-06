@@ -39,7 +39,7 @@ function Awake ()
 		Debug.Log("Please assign a camera to the ThirdPersonCamera script.");
 		enabled = false;	
 	}
-			
+	cameraTransform.gameObject.SetActive(true);
 		
 	_target = transform;
 	if (_target)
