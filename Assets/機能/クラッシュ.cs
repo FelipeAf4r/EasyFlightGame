@@ -27,6 +27,8 @@ public class クラッシュ : MonoBehaviour {
 			if( 炎上エフェクト != null)
 				炎上エフェクト.SetActive(true);
 			crashed = true;
+
+			GameController.GameOver();
 		}
 	}
 
